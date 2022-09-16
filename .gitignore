@@ -1,1 +1,5 @@
-/Andrusenko_JavaBasic_HomeWork.iml
+/.idea/
+/out/
+*.class
+*.iml
+.DS_Store

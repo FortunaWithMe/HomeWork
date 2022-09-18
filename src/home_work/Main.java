@@ -1,29 +1,36 @@
 package home_work;
-
-import java.util.Scanner;
+// Текс завдання в README.MD
 
 public class Main {
     public static void main(String[] args) {
 
-        // порахувати обʼєм та сумарну довжину стрін паралелепіпеда
+        int war_li;
+        int arc_li;
+        int hors_li;
+        double amount_li; //Кількіссть КОЖНОГО типу
+        double power_li;
 
-        Scanner calculator = new Scanner(System.in);
-        int a;
-        int b;
-        int c;
+        int war_min;
+        int arc_min;
+        int hors_min;
+        double amount_min; //Кількіссть КОЖНОГО типу
+        double power_min;
 
-        System.out.println("Введіть сторону - a");
-        a = calculator.nextInt();
-        System.out.println("Введіть сторону - b");
-        b = calculator.nextInt();
-        System.out.println("Введіть сторону - с");
-        c = calculator.nextInt();
+        war_li = 13;
+        arc_li = 24;
+        hors_li = 46;
+        amount_li = 860;
+        power_li = (war_li+arc_li+hors_li)*amount_li;
 
-        int volume = a*b*c;
-        int length = (a+b+c)*4;
+        war_min = 9;
+        arc_min = 35;
+        hors_min = 12;
+        amount_min = 860*1.5;
+        power_min = (war_min+arc_min+hors_min)*amount_min;
 
-        System.out.println("Об'єм паралелепіпеда = " + volume);
-        System.out.println("Сумарна довжина всіх сторін = " + length);
+
+        System.out.println("Загальний показник атаки династії Лі - " +power_li);
+        System.out.println("Загальний показник атаки династії Мінь - " +power_min);
 
     }
 }

@@ -7,17 +7,17 @@ public class Main {
 
         // порахувати обʼєм та сумарну довжину стрін паралелепіпеда
 
-        Scanner Calculator = new Scanner(System.in);
+        Scanner calculator = new Scanner(System.in);
         int a;
         int b;
         int c;
 
         System.out.println("Введіть сторону - a");
-        a = Calculator.nextInt();
+        a = calculator.nextInt();
         System.out.println("Введіть сторону - b");
-        b = Calculator.nextInt();
+        b = calculator.nextInt();
         System.out.println("Введіть сторону - с");
-        c = Calculator.nextInt();
+        c = calculator.nextInt();
 
         int volume = a*b*c;
         int length = (a+b+c)*4;

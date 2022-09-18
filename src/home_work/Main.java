@@ -57,11 +57,11 @@ public class Main {
         {
             if(middle_a > middle_b)
             {
-                System.out.println("Виграла комманда - "+a);
+                System.out.println("Перемогла комманда - " + a + " набрала " + middle_a + " очків");
             }
             else if (middle_a < middle_b)
             {
-                System.out.println("Виграла комманда - "+b);
+                System.out.println("Перемогла комманда - " + b + " набрала " + middle_b + " очків");
             }
             else if (middle_a == middle_b)
             {

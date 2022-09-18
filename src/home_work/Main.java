@@ -28,7 +28,6 @@ public class Main {
         amount_min = 860*1.5;
         power_min = (war_min+arc_min+hors_min)*amount_min;
 
-
         System.out.println("Загальний показник атаки династії Лі - " +power_li);
         System.out.println("Загальний показник атаки династії Мінь - " +power_min);
 

@@ -1,8 +1,11 @@
 package home_work;
 // Текс завдання в README.MD
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+
 
         int war_li;
         int arc_li;

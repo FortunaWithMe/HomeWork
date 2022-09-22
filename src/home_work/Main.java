@@ -65,7 +65,7 @@ public class Main {
             }
             else if (middle_a == middle_b)
             {
-                System.out.println("Перемогла дружба");
+                System.out.println("Перемогла дружба ");
             }
         }
 

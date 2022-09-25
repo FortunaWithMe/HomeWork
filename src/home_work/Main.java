@@ -12,43 +12,20 @@ public class Main {
         int a;
         int b;
 
-        a = number.nextInt();
-        b = (int) (Math.random() * 2);
 
-        while (a != b) {
+        b = (int) (Math.random() *10);
+
+        for (int i = 0; i < 3; i++)
 
             {
+                a = number.nextInt();
                 if (a == b) {
                     System.out.println("Ви виграли");
                     break;
                 } else if (a != b) {
-                    System.out.println("Спробуй ще");
+                    System.out.println("Прошраш");
                 }
-
-            }
-
-            a = number.nextInt();
-            {
-                if (a == b) {
-                    System.out.println("Ви виграли");
-                    break;
-                } else if (a != b) {
-                    System.out.println("Може на цей раз вийде?");
-                }
-            }
-
-            a = number.nextInt();
-            {
-                if (a == b) {
-                    System.out.println("Ви виграли");
-                    break;
-                } else if (a != b) {
-                    System.out.println("Ні, нажаль програш");
-                    break;
-                }
-
             }
         }
     }
-}
 

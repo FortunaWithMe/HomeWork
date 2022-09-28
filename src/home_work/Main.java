@@ -6,7 +6,6 @@ public class Main {
         int counter =1;
         int i = 0;
 
-
         while (isRunnig) {
 
             String shuttleNr = Integer.toString(i);
@@ -21,5 +20,4 @@ public class Main {
             }
         }
     }
-
 }

@@ -1,29 +1,36 @@
 package home_work;
-
-import java.util.Scanner;
+// Текст завдання в README.md
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
 
-        // порахувати обʼєм та сумарну довжину стрін паралелепіпеда
+        int [] teamA = new int[25];
+        int [] teamB = new int[25];
+        int totalA = 0;
+        int totalB = 0;
 
-        Scanner calculator = new Scanner(System.in);
-        int a;
-        int b;
-        int c;
+        Random random = new Random();
 
-        System.out.println("Введіть сторону - a");
-        a = calculator.nextInt();
-        System.out.println("Введіть сторону - b");
-        b = calculator.nextInt();
-        System.out.println("Введіть сторону - с");
-        c = calculator.nextInt();
+        for (int i = 0; i < teamA.length; i++) {
+            teamA[i] = random.nextInt(40 - 18 + 1) + 18;
+            totalA += teamA[i];
+            System.out.print(teamA[i] +" ");
+        }
 
-        int volume = a*b*c;
-        int length = (a+b+c)*4;
+        System.out.println(" ");
+        for (int i = 0; i < teamB.length; i++) {
+            teamB[i] = random.nextInt(40 - 18 + 1) + 18;
+            totalB += teamB[i];
+            System.out.print(teamB[i] +" ");
+        }
+        System.out.println(" ");
 
-        System.out.println("Об'єм паралелепіпеда = " + volume);
-        System.out.println("Сумарна довжина всіх сторін = " + length);
+        int middleA = totalA/25;
+        int middleB = totalB/25;
+
+        System.out.println("Середній вік гравців команди А - " +middleA);
+        System.out.println("Середній вік гравців команди B - " +middleB);
 
     }
 }

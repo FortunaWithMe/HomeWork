@@ -1,29 +1,43 @@
 package home_work;
-
-import java.util.Scanner;
+// Текст завдання в README.md
+import java.util.Arrays;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
 
-        // порахувати обʼєм та сумарну довжину стрін паралелепіпеда
+        int [] loteryData = new int[7];
+        int [] playerData = new int[7];
+        int match = 0;
 
-        Scanner calculator = new Scanner(System.in);
-        int a;
-        int b;
-        int c;
 
-        System.out.println("Введіть сторону - a");
-        a = calculator.nextInt();
-        System.out.println("Введіть сторону - b");
-        b = calculator.nextInt();
-        System.out.println("Введіть сторону - с");
-        c = calculator.nextInt();
+        Random random = new Random();
 
-        int volume = a*b*c;
-        int length = (a+b+c)*4;
+        for (int i = 0; i < loteryData.length; i++) {
+            loteryData[i] = random.nextInt(9);
+        }
+        System.out.println(" ");
 
-        System.out.println("Об'єм паралелепіпеда = " + volume);
-        System.out.println("Сумарна довжина всіх сторін = " + length);
+        for (int i = 0; i < playerData.length; i++) {
+            playerData[i] = random.nextInt(9);
+        }
+
+        Arrays.sort(loteryData);
+        System.out.println("Випало в лотереї " + Arrays.toString(loteryData));
+
+        Arrays.sort(playerData);
+        System.out.println("Гравець загадав  " + Arrays.toString(playerData));
+
+        for (int i = 0; i < loteryData.length; i++) {
+            if (loteryData[i] == playerData[i]) {
+                match++;
+            }
+        }
+        System.out.println("Кількість збігів " + match);
+
+
+
+
 
     }
 }

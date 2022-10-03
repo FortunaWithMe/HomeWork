@@ -1,32 +1,26 @@
 package home_work;
-// Текс завдання в README.MD
-
-import java.util.Scanner;
-
 public class Main {
+
+
     public static void main(String[] args) {
+        boolean isRunnig = true;
+        int counter =1;
+        int i = 0;
 
-        Scanner number = new Scanner(System.in);
-        System.out.println("Ведіть число");
+        while (isRunnig) {
 
-        int a;
-        int b;
+            String shuttleNr = Integer.toString(i);
+            i++;
+            if (shuttleNr.contains("4") || shuttleNr.contains("9")) {
+                continue;
+            }
+            counter ++;
+            System.out.println(shuttleNr);
+            if (counter == 100) {
+                isRunnig = false;
 
-
-        b = (int) (Math.random() *10);
-
-        for (int i = 0; i < 3; i++)
-
-        {
-            a = number.nextInt();
-            if (a == b) {
-                System.out.println("Ви виграли");
-                break;
-            } else if (a != b) {
-                System.out.println("Прошраш");
             }
         }
 
     }
 }
-

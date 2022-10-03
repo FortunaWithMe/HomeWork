@@ -1,6 +1,7 @@
 package home_work;
 public class Main {
 
+
     public static void main(String[] args) {
         boolean isRunnig = true;
         int counter =1;
@@ -17,7 +18,9 @@ public class Main {
             System.out.println(shuttleNr);
             if (counter == 100) {
                 isRunnig = false;
+
             }
         }
+
     }
 }

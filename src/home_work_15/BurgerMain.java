@@ -17,6 +17,5 @@ public class BurgerMain {
         System.out.println(burger3);
         System.out.println(" ");
 
-
     }
 }

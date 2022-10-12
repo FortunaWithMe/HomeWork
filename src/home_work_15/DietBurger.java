@@ -16,4 +16,5 @@ public class DietBurger extends Burger{
                 ", ingridientD='" + ingridientD + '\'' +
                 '}';
     }
+
 }

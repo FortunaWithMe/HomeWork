@@ -18,4 +18,5 @@ public class DoubleMeetBurger extends Burger{
                 ", ingridientF='" + ingridientF + '\'' +
                 '}';
     }
+
 }

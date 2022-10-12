@@ -19,5 +19,4 @@ public class StandartBurger extends Burger{
                 ", ingridientE='" + ingridientE + '\'' +
                 '}';
     }
-
 }

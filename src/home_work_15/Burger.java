@@ -34,4 +34,5 @@ public class Burger {
             this.ingridientC = ingridientC;
             this.ingridientD = ingridientD;
     }
+
 }

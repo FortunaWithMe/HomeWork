@@ -1,4 +1,4 @@
-package home_work_16;
+package home_work_15;
 
 public class DoubleMeetBurger extends Burger{
     public DoubleMeetBurger(String ingridientA, String ingridientB, String ingridientC,

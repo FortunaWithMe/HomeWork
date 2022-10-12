@@ -1,4 +1,4 @@
-package home_work_16;
+package home_work_15;
 
 public class Burger {
 
